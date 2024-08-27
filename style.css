@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(./imagenes/imgpro.jpg);
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+header {
+    height: 15vh;
+    min-height: 100px;
+}
+
+.title{
+    font-size: 3.75rem;
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+    text-align: center;
+
+}
+
+.img {
+    margin: 10px;
+    height: 50px;
+}
+
+.container {
+    margin: 10px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 700px;
+    height: auto;
+}
+
+.texto {
+    padding: 10px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    font-size: 1.5rem;
+    background-color: #967ba5;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    left: 10px;
+    cursor: pointer;
+
+    
+}
+
+textarea::placeholder{
+    color: white;
+}
+
+.mensaje_encriptado {
+    background-color: #967ba5;
+    height: auto;
+    width: 100%;
+    max-width: 350px;
+    margin: 5px 0;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.btn_copiar {
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 5px;
+    color: cornflowerblue;
+    background-color: blueviolet;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn_copiar:hover {
+    background-color: green;
+    transition: background-color 0.5s ease;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    font-size: 1.25rem; /* Mantiene el tamaño de fuente original */
+    padding: 10px 20px;
+    height: auto;
+    border-radius: 10px;
+    color: cornflowerblue;
+    background-color: blueviolet;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex: 0 0 40%; /* Ocupa el 40% del ancho del contenedor */
+    max-width: 200px; /* Ancho máximo */
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: green;
+}
+
+
+
+.info__contenido {
+    display: flex;
+
+    margin: 20px 0;
+}
+
+.info {
+    font-size: 1rem;
+    margin: 0 0 5px;
+    color: white;
+}
+
+.pie_pagina {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    position: relative;
+    bottom: 0;
+}
+
+.pie {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.enlace {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    color: white;
+}
+
+i {
+    margin-right: 10px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.enlaces:hover {
+    color: coral;
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+
+.parrafo {
+    color: white;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .container {
+        margin: 50px auto;
+        padding: 20px;
+    }
+
+    .texto, .mensaje_encriptado {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        margin: 100px auto;
+    }
+
+    .botones {
+        justify-content: flex-start;
+    }
+
+    .btn {
+        margin: 0 10px;
+    }
+}
+

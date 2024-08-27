@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/28b1f9dd87.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <img class="img" src="./imagenes/logo.png">
+        <h1 class="title">Encriptador</h1>
+    </header>
+    <main class="container">
+        <section class="contenido">
+            <textarea id="prueba" class="texto" maxlength="200" placeholder="Escribe el texto aquí" autofocus></textarea>
+        </section>
+        <section class="botones">
+            <button class="btn" onclick="btnEncriptar()">Encriptar</button>
+            <button class="btn" onclick="btnDescencriptar()">Desencriptar</button>
+        </section>
+        <section class="info__contenido">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <p class="info">Solo letras minúsculas y sin acento</p>
+        </section>
+        <section class="mensaje">
+            <textarea class="mensaje_encriptado" placeholder="Mensaje desencriptado" maxlength="200"></textarea>
+            <div>
+                <button class="btn_copiar" id="mostrar" onclick="btnCopiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="pie_pagina">
+        <div class="pie">
+            <p class="parrafo">Desarrollado por Bruno Romero. Puedes encontrarme y contactarme aquí:</p>
+            <div class="enlace">
+                
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/Bruno-R98" class="enlaces">Github</a>
+            </div>
+            <div class="enlace">
+                <i class="fa-brands fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/bruno-romero-36378626b/" class="enlaces">Linkedin</a>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
